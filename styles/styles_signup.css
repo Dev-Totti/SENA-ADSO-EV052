@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Luckiest+Guy&family=Pacifico&display=swap");
+
+:root {
+    --primary-color: #a42941;
+    --secondary-color: #eceff1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    background-color: var(--secondary-color);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+#background-img {
+    width: 50%;
+    height: 100%;
+    background-color: #a42941;
+    background-image: url("../images/asset2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#user-form {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#login-form {
+    width: 80%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#login-form h2 {
+    color: var(--primary-color);
+}
+
+#login-form p {
+    color: #707070;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #444444;
+    border-radius: 8px;
+    background-color: white;
+    font-size: 1.2em;
+}
+
+input::placeholder {
+    color: #707070;
+    font-weight: 400;
+}
+
+#register-button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.extra-info {
+    display: flex;
+    gap: 5px;
+}
+
+#terms {
+    width: 15px;
+}
+
+.extra-info a {
+    font-weight: 700;
+}
+
+#login-button {
+    /* display: flex; */
+    width: 100%;
+    /* height: 50px; */
+    padding: 15px;
+    text-align: center;
+    background-color: rgb(120, 120, 120);
+    color: white;
+    border-radius: 8px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #background-img {
+        display: none;
+    }
+
+    #user-form {
+        width: 100%;
+        height: 50%;
+    }
+}

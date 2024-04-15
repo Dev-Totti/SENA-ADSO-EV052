@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Flor d'Loto</title>
+        <link rel="stylesheet" href="styles/styles_signup.css" />
+        <script
+            src="https://kit.fontawesome.com/4f184a4098.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <main>
+            <section id="background-img"></section>
+            <section id="user-form">
+                <form id="login-form" action="index.html">
+                    <h2>Crear Mi Cuenta</h2>
+
+                    <label for="name">Mis Nombres</label>
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Paola Andrea"
+                        required
+                    />
+
+                    <label for="last-name">Mis Apellidos</label>
+                    <input
+                        type="text"
+                        id="last-name"
+                        placeholder="Rodriguez Ruiz"
+                        required
+                    />
+
+                    <label for="email">Mi email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="usuario@ejemplo.com"
+                        required
+                    />
+
+                    <label for="password">Mi contraseña</label>
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="********"
+                        required
+                    />
+
+                    <div class="extra-info">
+                        <input type="checkbox" id="terms" required />
+                        <label for="terms"
+                            >Acepto los
+                            <a href="#">Términos y Condiciones</a></label
+                        >
+                    </div>
+
+                    <button type="submit" id="register-button">
+                        Registrarme
+                    </button>
+                    <hr />
+                    <a href="login.html" id="login-button"> Iniciar Sesion </a>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>
